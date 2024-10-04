@@ -1,0 +1,15 @@
+### Get Comic Books
+GET http://localhost:8080/api/comic-books
+
+### Add Comic Book
+POST http://localhost:8080/api/comic-books
+Content-Type: application/json
+
+{
+  "series": "Green Lantern",
+  "volume": 4,
+  "issue": 1
+}
+
+### Search By Series
+GET http://localhost:8080/api/comic-books/search?series=GreenLantern

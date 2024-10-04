@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "9470e3d6-92d0-499c-a461-494aec9ace4f",
+		"name": "DAX Technical Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1554484"
+	},
+	"item": [
+		{
+			"name": "Get Comic Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/comic-books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"comic-books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search By Series",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/comic-books/search?series=Green Lantern",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"comic-books",
+						"search"
+					],
+					"query": [
+						{
+							"key": "series",
+							"value": "Green Lantern"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Comic Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"series\": \"Green Lantern\",\n    \"volume\": 4,\n    \"issue\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/comic-books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"comic-books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

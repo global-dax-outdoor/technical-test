@@ -1,0 +1,5 @@
+rootProject.name = "technical-test"
+
+include "core"
+include "server"
+include "test-utils"

@@ -1,0 +1,12 @@
+plugins {
+    id "org.springframework.boot" version "${springBootPluginVersion}"
+    id "io.spring.dependency-management" version "${springDependenciesPluginVersion}"
+}
+
+dependencies {
+    implementation project(":core")
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    testImplementation project(":test-utils")
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
